@@ -5,7 +5,7 @@ exports.handler = (event, context, callback) => {
     const params = {
         Key: {
             "userID": {
-                S: ""+ event.userID
+                S: "" + event.userID
             }
         },
         TableName: "bill-yourself"
