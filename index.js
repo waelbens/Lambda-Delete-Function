@@ -10,7 +10,7 @@ exports.handler = (event, context, callback) => {
         },
         TableName: "bill-yourself"
     };
-    dynamodb.deleteItem(params, function (err, data) {
+    dynamodb.deleteItem(params, function(err, data) {
         if (err) {
             console.log(err);
             callback(err);     
